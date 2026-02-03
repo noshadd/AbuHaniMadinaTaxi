@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:
+    Segoe UI,
+    serif;
+}
+body {
+  background: #fff;
+  color: #111;
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(180deg, #0f2a44, #123c5a);
+  color: #fff;
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: url(assets/pattern.png);
+  opacity: 0.15;
+}
+
+.hero-content {
+  position: relative;
+  max-width: 900px;
+  padding: 20px;
+}
+
+.location-pill {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 8px 20px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 64px;
+  margin-bottom: 10px;
+}
+.focus {
+  color: #f2b233;
+}
+.hero h1 span {
+  color: #f2b233;
+}
+
+.subtitle {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.desc {
+  opacity: 0.8;
+  margin-bottom: 30px;
+}
+
+.btn {
+  padding: 14px 26px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.hover:hover {
+  background: #f2b233;
+  color: #000;
+}
+
+.yellow {
+  background: #f2b233;
+  color: #000;
+}
+.outline {
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 120px;
+  background: #fff;
+  border-top-left-radius: 100% 40%;
+  border-top-right-radius: 100% 40%;
+}
+
+/* Fleet */
+.fleet {
+  padding: 80px 10%;
+  text-align: center;
+}
+.fleet h2 {
+  font-size: 36px;
+}
+.fleet h2 span {
+  color: #f2b233;
+}
+
+.fleet-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.car-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+}
+
+.car-card img {
+  width: 100%;
+  border-radius: 12px;
+}
+.car-card h3 {
+  margin: 15px 0;
+}
+
+.car-card ul {
+  list-style: none;
+}
+.car-card li {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.full {
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* Steps */
+.steps {
+  background: #fbf2dc;
+  padding: 80px;
+  text-align: center;
+}
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+.step {
+  background: #fff;
+  padding: 30px;
+  border-radius: 14px;
+}
+
+/* Services */
+.services {
+  padding: 80px;
+  text-align: center;
+}
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+.service-card {
+  padding: 30px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Contact */
+.contact {
+  background: linear-gradient(180deg, #123c5a, #0f2a44);
+  color: #fff;
+  padding: 100px 10%;
+  text-align: center;
+}
+.contact-boxes {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin: 40px 0;
+  flex-wrap: wrap;
+}
+.box {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 30px;
+  border-radius: 14px;
+  width: 220px;
+}
+.green {
+  background: #22c55e;
+  color: #fff;
+}
+
+footer {
+  background: #081a2b;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+}
+/* CUSTOMER SERVICE FOOTER */
+.customer-service {
+  background: linear-gradient(180deg, #425d78, #081a2b);
+  color: #fff;
+  padding: 100px 10% 40px;
+  text-align: center;
+}
+
+.customer-service h3 {
+  font-size: 26px;
+  margin-bottom: 25px;
+}
+
+.service-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.service-btn {
+  padding: 14px 26px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.service-btn.dark {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+
+.service-btn.whatsapp {
+  background: #22c55e;
+  color: #fff;
+}
+
+.coming-soon {
+  display: inline-block;
+  background: rgba(242, 178, 51, 0.15);
+  color: #f2b233;
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-size: 14px;
+  margin: 30px 0;
+}
+
+.customer-service h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  opacity: 0.8;
+  margin-bottom: 40px;
+}
+
+.footer-line {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.15);
+  margin: 40px 0 25px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  opacity: 0.8;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.price {
+  font-weight: 400;
+  /* background-color: #e0e0e0; */
+}
+.Wa-btn {
+  cursor: pointer;
+}
+.price:hover {
+  /* font-weight: 700; */
+  /* text-decoration: underline; */
+  /* background-color: #797979; */
+  /* margin: 2px; */
+  /* padding: 5px; */
+  /* border: 2px solid #797979; */
+}
+.card {
+  background-color: #f3f4f6;
+  /* transition: background-color 0.3s ease; */
+}
+
+.card:hover {
+  /* background-color: #f3f4f6; */
+}
+.card:hover {
+  /* background-color: #2a6df5; */
+}
